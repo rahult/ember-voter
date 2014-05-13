@@ -6,10 +6,10 @@ var VoteController = Ember.ObjectController.extend({
   },
   actions: {
     up: function () {
-      this.updateVotes(this.get('model'), 1)
+      this.updateVotes(this.get('model'), 1);
     },
     down: function () {
-      this.updateVotes(this.get('model'), -1)
+      this.updateVotes(this.get('model'), -1);
     },
     remove: function () {
       var idea = this.get('model');
