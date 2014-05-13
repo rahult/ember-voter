@@ -10,6 +10,11 @@ var VoteController = Ember.ObjectController.extend({
     },
     down: function () {
       this.updateVotes(this.get('model'), -1)
+    },
+    remove: function () {
+      var idea = this.get('model');
+      idea.deleteRecord();
+      idea.save();
     }
   }
 });
