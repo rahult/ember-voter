@@ -1,0 +1,8 @@
+{{input type="text" value=idea placeholder="All suggestions are welcomed" size="50" enter='submit'}}
+<button {{action 'submit'}}>Submit</button>
+
+<ul>
+  {{#each model}}
+    <li>{{title}}</li>
+  {{/each}}
+</ul>
