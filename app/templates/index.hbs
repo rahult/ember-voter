@@ -2,7 +2,11 @@
 <button {{action 'submit'}}>Submit</button>
 
 <ul>
-  {{#each model}}
-    <li>{{title}}</li>
+  {{#each itemController="vote"}}
+    <li>
+      <a href="#" {{action 'up'}}>Up</a>
+      <a href="#" {{action 'down'}}>Down</a>
+      {{title}} Votes {{votes}}
+    </li>
   {{/each}}
 </ul>
